@@ -1,6 +1,14 @@
 package com.boot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Shipwreck {
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 	Long id;
 	String name;
 	String description;
@@ -26,7 +34,6 @@ public class Shipwreck {
 	public Long getId() {
 		return id;
 	}
-
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -34,7 +41,6 @@ public class Shipwreck {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -42,7 +48,6 @@ public class Shipwreck {
 	public String getDescription() {
 		return description;
 	}
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
@@ -50,7 +55,6 @@ public class Shipwreck {
 	public String getCondition() {
 		return condition;
 	}
-
 	public void setCondition(String condition) {
 		this.condition = condition;
 	}
@@ -58,7 +62,6 @@ public class Shipwreck {
 	public Integer getDepth() {
 		return depth;
 	}
-
 	public void setDepth(Integer depth) {
 		this.depth = depth;
 	}
@@ -66,7 +69,6 @@ public class Shipwreck {
 	public Double getLatitude() {
 		return latitude;
 	}
-
 	public void setLatitude(Double latitude) {
 		this.latitude = latitude;
 	}
@@ -74,7 +76,6 @@ public class Shipwreck {
 	public Double getLongitude() {
 		return longitude;
 	}
-
 	public void setLongitude(Double longitude) {
 		this.longitude = longitude;
 	}
@@ -82,7 +83,6 @@ public class Shipwreck {
 	public Integer getYearDiscovered() {
 		return yearDiscovered;
 	}
-
 	public void setYearDiscovered(Integer yearDiscovered) {
 		this.yearDiscovered = yearDiscovered;
 	}
