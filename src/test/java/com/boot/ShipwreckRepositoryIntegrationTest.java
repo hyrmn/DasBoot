@@ -16,7 +16,6 @@ import static org.hamcrest.Matchers.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = App.class)
-@WebAppConfiguration
 public class ShipwreckRepositoryIntegrationTest {
     @Autowired
     private ShipwreckRepository shipwreckRepository;
